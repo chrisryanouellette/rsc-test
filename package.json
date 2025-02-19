@@ -1,0 +1,35 @@
+{
+  "name": "rsc-two",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "null/rsc-two",
+  "author": "Christopher Ouellette",
+  "homepage": "https://github.com/null/rsc-two",
+  "bugs": "https://github.com/null/rsc-two/issues",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/webpack"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "scripts": {
+    "serve": "node --watch ./server.js",
+    "client": "webpack --watch",
+    "rsc": "webpack --watch --config=\"webpack.rsc.mjs\""
+  },
+  "dependencies": {
+    "esbuild": "^0.25.0",
+    "esbuild-loader": "^4.3.0",
+    "express": "^4.21.2",
+    "loader-utils": "^3.3.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-server-dom-webpack": "19.0.0",
+    "schema-utils": "^4.3.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
