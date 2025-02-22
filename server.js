@@ -9,6 +9,10 @@ const port = 3000;
 
 app.use(express.static("dist"));
 
+app.get("/api", (req, res) => {
+  return res.send("This is from the server!").end()
+})
+
 app.get("/", async (req, res) => {
   let file = fs.readFileSync(path.resolve(__dirname, "./index.html"));
   const rsc = await import("./dist/Rsc.js");
